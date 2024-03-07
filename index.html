@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumpstick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <section class="header" id="headerSection">
+        <div id="scrollToHome"></div>
+        <nav>
+            <a><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a onclick="scrollToHome()">Home</a></li>
+                    <li><a onclick="scrollToFeatures()">Features</a></li>
+                    <li><a onclick="scrollToGallery()">Gallery</a></li>
+                    <li><a onclick="scrollToWishlist()">Wishlist</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>A Fresh Platformer</h1>
+            <p> Bumpstick is a unique platformer, where you control a bouncy neon stick and move through levels as fast as possible. </p>
+            <a href="https://store.steampowered.com/app/1750010/Bumpstick/" class="hero-btn">Visit the Steam page</a>
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <div id="scrollToFeatures"></div>
+        <h1>Features Overview</h1>
+
+        <div class="row">
+            <div class="features-col">
+                <img src="images/2.png">
+                <h3>Unique Gameplay</h3>
+                <p>Take control of your neon stick and bounce through the levels as fast as you can!</p>
+                <ul>
+                    <li>- fight for the best time in online leaderboards</li>
+                    <li>- unlock new customization options for your Bumpstick</li>
+                    <li>- save your favorite replays</li>
+                </ul>
+            </div>
+            <div class="features-col">
+                <img src="images/1.png">
+                <h3>Multiplayer</h3>
+                <p>Bumpstick supports local multiplayer for as many people, as you can fit in front of the screen!</p>
+                <ul>
+                    <li>- set up the looks of each player</li>
+                    <li>- fight for the first place</li>
+                    <li>- play in special PvP game modes</li>
+                </ul>
+            </div>
+            <div class="features-col">
+                <img src="images/3.png">
+                <h3>Level Editor</h3>
+                <p>Have a cool idea for a level? You can create it using the same editor that was used to create all the levels in the game and post it to the Steam Workshop, so others can play it too!</p>
+                <ul>
+                    <li>- play on levels created by other players</li>
+                    <li>- create your own ones and share them</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div id="scrollToGallery"></div>
+        <h1>Screenshots</h1>
+        
+        <div class="row">
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/1.png">
+            </div>
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/2.png">
+            </div>
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/banner.png">
+            </div>
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/4.png">
+            </div>
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/5.png">
+            </div>
+            <div class="gallery-col" onclick="enlargeScreenshot(this)">
+                <img src="images/6.png">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="wishlist">
+        <div id="scrollToWishlist"></div>
+        <h1>Wishlist The Game</h1>
+        <p>The game is set to release soon, wishlist it to be notified!</p>
+        <a href="https://store.steampowered.com/app/1750010/Bumpstick/" class="hero-btn"> WISHLIST </a>
+    </section>
+    
+</body>
+</html>
